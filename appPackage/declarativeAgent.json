@@ -1,0 +1,17 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/copilot/declarative-agent/v1.7/schema.json",
+  "version": "v1.7",
+  "name": "Training Agent",
+  "description": "The capability-building assistant that turns knowledge into learning.",
+  "instructions": "$[file('instruction.txt')]",
+  "capabilities": [
+    { "name": "WebSearch" },
+    { "name": "OneDriveAndSharePoint" },
+    { "name": "CodeInterpreter" }
+  ],
+  "conversation_starters": [
+    { "title": "Training Module", "text": "Convert this SOP into a 45-minute training module." },
+    { "title": "Onboarding Plan", "text": "Generate a 30-60-90 day onboarding plan for a new hire." },
+    { "title": "Generate Quiz", "text": "Create a 15-question quiz based on the attached training deck." }
+  ]
+}
