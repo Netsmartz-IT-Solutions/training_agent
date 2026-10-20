@@ -1,17 +1,44 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/copilot/declarative-agent/v1.7/schema.json",
   "version": "v1.7",
-  "name": "Training Agent",
-  "description": "The capability-building assistant that turns knowledge into learning.",
+  "name": "NTZ Training Copilot",
+  "description": "Training and enablement copilot that converts SOPs into learning materials, quizzes, onboarding plans, and study guides using SharePoint grounding.",
   "instructions": "$[file('instruction.txt')]",
   "capabilities": [
-    { "name": "WebSearch" },
-    { "name": "OneDriveAndSharePoint" },
-    { "name": "CodeInterpreter" }
+    {
+      "name": "WebSearch"
+    },
+    {
+      "name": "OneDriveAndSharePoint"
+    },
+    {
+      "name": "CodeInterpreter"
+    }
   ],
   "conversation_starters": [
-    { "title": "Training Module", "text": "Convert this SOP into a 45-minute training module." },
-    { "title": "Onboarding Plan", "text": "Generate a 30-60-90 day onboarding plan for a new hire." },
-    { "title": "Generate Quiz", "text": "Create a 15-question quiz based on the attached training deck." }
+    {
+      "title": "Convert an SOP",
+      "text": "Convert this SOP into a structured training module using our learning templates."
+    },
+    {
+      "title": "Generate a Quiz",
+      "text": "Create a role-based assessment from this training document with an answer key."
+    },
+    {
+      "title": "Create an Onboarding Plan",
+      "text": "Generate a structured 30-60-90 day onboarding plan using our onboarding templates."
+    },
+    {
+      "title": "Build a Study Guide",
+      "text": "Generate a study guide from this documentation using our training playbook."
+    },
+    {
+      "title": "Create Flashcards",
+      "text": "Generate spaced-repetition flashcards from this learning material."
+    },
+    {
+      "title": "Generate Training Document",
+      "text": "Generate a professionally formatted .docx version of the training material discussed in this conversation."
+    }
   ]
 }

@@ -1,0 +1,38 @@
+{
+    "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.27/MicrosoftTeams.schema.json",
+    "manifestVersion": "1.27",
+    "version": "1.0.0",
+    "id": "33e3d87e-4934-4316-ba29-f3f57b44f595",
+    "developer": {
+        "name": "Netsmartz",
+        "websiteUrl": "https://www.netsmartz.com",
+        "privacyUrl": "https://www.netsmartz.com/privacy-policy/",
+        "termsOfUseUrl": "https://www.netsmartz.com/terms/agent-marketplace/"
+    },
+    "icons": {
+        "color": "color.png",
+        "outline": "outline.png"
+    },
+    "name": {
+        "short": "NTZ Training Copilot",
+        "full": "NTZ Training Copilot"
+    },
+    "description": {
+        "short": "Training assistant for SOPs, onboarding, quizzes, and learning content.",
+        "full": "NTZ Training Copilot converts SOPs and knowledge content into structured training modules, onboarding guides, quizzes, and learning materials using Microsoft 365 data."
+    },
+    "accentColor": "#005A9E",
+    "copilotAgents": {
+        "declarativeAgents": [
+            {
+                "id": "ntzTrainingCopilot",
+                "file": "declarativeAgent.json"
+            }
+        ]
+    },
+    "permissions": [
+        "identity",
+        "messageTeamMembers"
+    ],
+    "validDomains": []
+}
